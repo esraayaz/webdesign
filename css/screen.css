@@ -72,6 +72,7 @@ header {
 }
 
 header a.logo {
+    z-index: 1;
     position: absolute;
     display: block;
     width: 160px;
@@ -257,6 +258,111 @@ section.how-to blockquote p.credit::before {
     position: absolute;
     top: -1px;
     left: 0;
+}
+
+
+/* <---------- Navigation ----------> */
+
+nav {
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding: 50px 0 0 0;
+    width: 100%;
+}
+
+nav::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li:hover {
+    background-color: #2b0306;
+}
+
+nav ul li:hover>ul {
+    display: block;
+}
+
+nav ul li a {
+    display: inline-block;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    width: 125px;
+    position: relative;
+}
+
+nav ul li a:visited {
+    color: #fff;
+}
+
+nav ul li a:hover {
+    color: #fff;
+    background-color: #6d0911;
+}
+
+nav ul ul {
+    position: absolute;
+    top: 100%;
+    background-color: #2b0306;
+    display: none;
+}
+
+nav ul ul li {
+    position: relative;
+}
+
+nav ul ul ul {
+    left: 100%;
+    top: 0px;
+}
+
+
+/* <---------- Top-Level ----------> */
+
+nav>ul {
+    padding-left: 200px;
+}
+
+nav>ul>li {
+    float: left;
+}
+
+nav>ul>li>a {
+    width: auto;
+    padding: 10px 20px 15px 20px;
+}
+
+nav a[aria-haspopup="true"]::after {
+    content: "";
+    display: block;
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    top: 16px;
+    right: 15px;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    border-left: 4px solid #fff;
+}
+
+nav>ul>li>a[aria-haspopup="true"]::after {
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 4px solid #fff;
+    left: 20px;
+    right: auto;
+    bottom: 6px;
+    top: auto;
 }
 
 
