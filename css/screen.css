@@ -134,21 +134,23 @@ section.main aside h3 a:hover {
 
 section.main aside .content.motto {
     background-image: url(../images/hat-wizard-solid.svg);
-    background-color: #999;
     line-height: 35px;
-    padding: 30px;
+    padding: 0 20 0 20px;
+    filter: invert(25%) sepia(90%) saturate(1500%) hue-rotate(180deg) brightness(120%) contrast(120%);
 }
 
 section.main aside .content.location {
     background-image: url(../images/location-dot-solid.svg);
-    background-color: #959;
-    padding: 30px;
+    line-height: 35px;
+    padding: 0 20 0 20px;
+    filter: invert(25%) sepia(90%) saturate(1400%) hue-rotate(250deg) brightness(120%) contrast(120%);
 }
 
 section.main aside .content.owner {
     background-image: url(../images/wand-sparkles-solid.svg);
-    background-color: #999;
-    padding: 30px;
+    line-height: 28px;
+    padding: 0 20 0 20px;
+    filter: invert(25%) sepia(90%) saturate(1200%) hue-rotate(300deg) brightness(120%) contrast(120%);
 }
 
 
@@ -173,44 +175,43 @@ section.atmosphere article {
 }
 
 
-/* <---------- Section How To ----------> */
+/* <---------- Section Great Hall ----------> */
 
-section.how-to {
-    background-color: #eee9d9;
+section.great-hall {
     position: relative;
 }
 
-section.how-to aside {
+section.great-hall aside {
     width: 30%;
     float: left;
     margin: 10px;
 }
 
-section.how-to aside .content {
+section.great-hall aside .content {
     padding: 30px 30px 20px 0;
 }
 
-section.how-to aside .content img {
+section.great-hall aside .content img {
     display: block;
     margin-bottom: 15px;
-    width: 70%;
+    width: 100%;
 }
 
-section.how-to aside .content h4 {
+section.great-hall aside .content h4 {
     margin-bottom: 0;
 }
 
-section.how-to aside .content p {
+section.great-hall aside .content p {
     margin-bottom: 0.5em;
 }
 
-section.how-to aside .content a {
+section.great-hall aside .content a {
     display: inline-block;
-    color: #cc6633;
+    color: rgb(255, 0, 0);
     font-weight: 700;
 }
 
-section.how-to blockquote {
+section.great-hall blockquote {
     margin: 2px 0px;
     width: 32%;
     color: #444;
@@ -218,18 +219,19 @@ section.how-to blockquote {
     position: absolute;
     bottom: 0;
     right: 4%;
+    top: 4%;
 }
 
-section.how-to blockquote p {
+section.great-hall blockquote p {
     margin: 30px 30px 20px 50px;
 }
 
-section.how-to blockquote p.quote {
+section.great-hall blockquote p.quote {
     font-style: italic;
     font-size: 1.2em;
 }
 
-section.how-to blockquote p.credit {
+section.great-hall blockquote p.credit {
     color: #777;
     font-size: 0.9em;
     margin-top: 0;
@@ -238,7 +240,7 @@ section.how-to blockquote p.credit {
     position: relative;
 }
 
-section.how-to blockquote::before {
+section.great-hall blockquote::before {
     content: "\201c";
     color: #d2bd65;
     position: absolute;
@@ -248,12 +250,12 @@ section.how-to blockquote::before {
     font-family: serif;
 }
 
-section.how-to blockquote p.quote::after {
+section.great-hall blockquote p.quote::after {
     content: "\201d";
     font-family: serif;
 }
 
-section.how-to blockquote p.credit::before {
+section.great-hall blockquote p.credit::before {
     content: "\2014";
     position: absolute;
     top: -1px;
@@ -282,7 +284,6 @@ nav ul {
     list-style: none;
     margin: 0px;
     padding: 0;
-    margin-left: -200px;
 }
 
 nav ul li:hover {
@@ -329,10 +330,6 @@ nav ul ul ul {
 
 
 /* <---------- Top-Level ----------> */
-
-nav>ul {
-    padding-left: 200px;
-}
 
 nav>ul>li {
     float: left;
@@ -435,12 +432,12 @@ footer a:bover {
         padding-left: 325px;
         background-size: 300px auto;
     }
-    /* <---------- Section How To ----------> */
-    section.how-to blockquate p.quote {
+    /* <---------- Section Great Hall ----------> */
+    section.great-hall blockquate p.quote {
         font-size: 1.1em;
         line-height: 1.2em;
     }
-    section.how-to blockquate p.credit {
+    section.great-hall blockquate p.credit {
         font-size: 0.85em;
     }
 }
@@ -479,8 +476,8 @@ footer a:bover {
         background-size: 55px 55px;
         padding-top: 60px;
     }
-    /* <---------- Section How to ----------> */
-    section.how-to aside div.content img {
+    /* <---------- Section Great Hall ----------> */
+    section.great-hall aside div.content img {
         width: 85%;
     }
     /* <---------- Navigation ----------> */
@@ -547,33 +544,33 @@ footer a:bover {
         background-size: 300px auto;
         min-height: initial;
     }
-    /* <---------- Section How To ----------> */
-    section.how-to aside {
+    /* <---------- Section Great Hall ----------> */
+    section.great-hall aside {
         width: 100%;
         float: none;
         margin: 0;
         position: relative;
     }
-    section.how-to aside div.content {
+    section.great-hall aside div.content {
         padding: 20px 20px 20px 150px;
     }
-    section.how-to aside div.content p {
+    section.great-hall aside div.content p {
         font-size: 0.9em;
     }
-    section.how-to aside div.content img {
+    section.great-hall aside div.content img {
         display: inline-block;
         width: 125px;
         position: absolute;
         top: 30px;
         left: 0px;
     }
-    section.how-to blockquote {
+    section.great-hall blockquote {
         margin: 0 20px 0 40px;
         width: 90%;
         padding: 1px 0px 20px 0px;
         position: relative;
     }
-    section.how-to blockquote p.credit {
+    section.great-hall blockquote p.credit {
         margin-bottom: 0;
     }
     /* <---------- Navigation ----------> */
