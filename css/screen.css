@@ -79,7 +79,7 @@ header div.hero {
     text-shadow: 2px 2px 2px #000;
     width: 43%;
     top: 100px;
-    left: 55%;
+    left: 69%;
 }
 
 header div.hero h1 {
@@ -211,8 +211,13 @@ section.great-hall aside .content p {
 
 section.great-hall aside .content a {
     display: inline-block;
-    color: rgb(255, 0, 0);
+    color: rgba(255, 0, 0, 0.8);
+    text-decoration: none;
     font-weight: 700;
+}
+
+section.great-hall aside .content a:hover {
+    text-decoration: underline;
 }
 
 section.great-hall blockquote {
@@ -394,30 +399,35 @@ footer a:bover {
     color: #000;
 }
 
-#created {
-    margin-top: 10px;
+footer p#created {
+    padding-top: 20px;
     text-align: center;
-    margin-left: 30%;
 }
 
 
-/* <=============== Media Queries 1000px ===============> */
+/* <=============== Media Queries 1200px ===============> */
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
     h1 {
         font-size: 2.4em;
     }
     /* <---------- Header ----------> */
     header div.hero {
-        left: 56%;
+        left: 60%;
+        background-size: 100%;
     }
     header div.hero h1 {
         margin-bottom: 20px;
     }
     /* <---------- Section Atmosphere ----------> */
     section.atmosphere article {
-        padding-left: 400px;
+        padding-left: 300px;
+        padding-right: 5px;
         background-size: 375px auto;
+    }
+    /* <---------- Footer ----------> */
+    footer p#created {
+        padding-top: 20px;
     }
 }
 
@@ -432,16 +442,23 @@ footer a:bover {
     header {
         height: 300px;
         background-image: url(../images/big_room.jpg);
-        background-size: cover;
+        background-size: 100%;
     }
     header div.hero {
-        left: 48%;
-        top: 120px;
+        left: 60%;
+        top: 140px;
+    }
+    header div.hero a.btn {
+        font-size: 0.9em;
     }
     /* <---------- Section Atmosphere ----------> */
     section.atmosphere article {
-        padding-left: 325px;
+        padding-left: 230px;
         background-size: 300px auto;
+        margin-top: 20px;
+    }
+    section.atmosphere article a.btn {
+        font-size: 1.1em;
     }
     /* <---------- Section Great Hall ----------> */
     section.great-hall blockquate p.quote {
@@ -450,6 +467,10 @@ footer a:bover {
     }
     section.great-hall blockquate p.credit {
         font-size: 0.85em;
+    }
+    /* <---------- Footer ----------> */
+    footer p#created {
+        padding-top: 20px;
     }
 }
 
@@ -470,13 +491,9 @@ footer a:bover {
         font-size: 1em;
     }
     /* <---------- Header ----------> */
-    header a.logo {
-        width: 145px;
-        height: 60px;
-    }
     header div.hero {
         top: 140px;
-        left: 48%;
+        left: 60%;
     }
     /* <---------- Section Main ----------> */
     section.main {
@@ -493,10 +510,14 @@ footer a:bover {
     }
     /* <---------- Navigation ----------> */
     nav {
-        padding-top: 80px;
+        padding-top: 20px;
     }
     nav>ul {
         padding-left: 10px;
+    }
+    /* <---------- Footer ----------> */
+    footer p#created {
+        padding-top: 20px;
     }
 }
 
@@ -520,19 +541,10 @@ footer a:bover {
         background-size: cover;
         background-position: left top;
     }
-    header a.logo {
-        width: 100%;
-        height: 66px;
-        left: 0px;
-        top: 0px;
-        background-color: rbga(0, 0, 0, 0.6);
-        background-size: 112px 46px;
-        background-position: 20px center;
-    }
     header div.hero {
         width: 300px;
-        top: 85px;
-        left: 130px;
+        left: 200px;
+        top: 50px;
     }
     header div.hero h1 {
         margin-bottom: 10px;
@@ -550,10 +562,17 @@ footer a:bover {
         background-position: 20px 5px;
     }
     /* <---------- Section Atmosphere ----------> */
+    section.atmosphere {
+        padding: 5px 10px;
+    }
     section.atmosphere article {
-        padding: 160px 20px 0px 0px;
+        padding: 200px 10px 0px 0px;
         background-size: 300px auto;
         min-height: initial;
+    }
+    #atmosphere-right-text {
+        margin-left: 2px;
+        margin-top: 10px;
     }
     /* <---------- Section Great Hall ----------> */
     section.great-hall aside {
@@ -577,8 +596,8 @@ footer a:bover {
     }
     section.great-hall blockquote {
         margin: 0 20px 0 40px;
-        width: 90%;
-        padding: 1px 0px 20px 0px;
+        width: 80%;
+        padding: 10px 0px 40px 15px;
         position: relative;
     }
     section.great-hall blockquote p.credit {
@@ -602,7 +621,6 @@ footer a:bover {
     }
     nav>ul>li {
         float: none;
-        margin-top: 25px;
     }
     nav ul li:hover {
         background: none;
@@ -636,5 +654,41 @@ footer a:bover {
     }
     footer div.content a {
         margin: 0 20px 0 0;
+    }
+    /* <---------- Footer ----------> */
+    footer p#created {
+        padding-top: 20px;
+    }
+}
+
+
+/* <=============== Media Queries 425px ===============> */
+
+@media screen and (max-width: 425px) {
+    /* <---------- Header ----------> */
+    header {
+        height: 200px;
+    }
+    header div.hero {
+        width: 100%;
+        top: 75px;
+        left: 10px;
+        text-align: center;
+    }
+    header div.hero h1 {
+        font-size: 1em;
+        margin-bottom: 10px;
+    }
+    /* <---------- Section Atmosphere ----------> */
+    section.atmosphere {
+        padding: 30px 20px;
+    }
+    /* <---------- Section Great Hall ----------> */
+    section.great-hall blockquote {
+        margin: 15px;
+    }
+    /* <---------- Footer ----------> */
+    footer p#created {
+        padding-top: 20px;
     }
 }
